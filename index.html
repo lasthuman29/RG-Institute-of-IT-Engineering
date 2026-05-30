@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RG Institute of IT & Engineering</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <span>📍 1187/2, Shivaji Nagar, Jhansi, Uttar Pradesh | NIELIT Exam Centre</span>
+  <div>
+    <span>📞</span><a href="tel:+916393944207">6393 944 207</a>
+    <a href="mailto:rgiite76@gmail.com">✉ rgiite76@gmail.com</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#home" class="logo">
+      <div class="logo-emblem">
+        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 2L4 8V20L14 26L24 20V8L14 2Z" stroke="#C9A84C" stroke-width="1.5" fill="rgba(201,168,76,0.1)"/>
+          <text x="14" y="17" text-anchor="middle" fill="#C9A84C" font-size="8" font-weight="bold" font-family="serif">RG</text>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <h1>RG Institute of IT & Engineering</h1>
+        <p>Excellence · Innovation · Growth</p>
+      </div>
+    </a>
+
+    <nav id="main-nav">
+      <a href="#home" class="active" onclick="setActive(this)">Home</a>
+      <a href="#about" onclick="setActive(this)">About</a>
+
+      <div class="dropdown">
+        <button class="nav-link">Courses <span class="chevron">▾</span></button>
+        <div class="dropdown-menu">
+          <a href="#courses" onclick="filterCourses('cert')">Certificate Courses</a>
+          <a href="#courses" onclick="filterCourses('dip')">Diploma Courses</a>
+          <a href="#courses" onclick="filterCourses('other')">Other Courses</a>
+          <a href="#courses" onclick="filterCourses('proj')">Our Projects</a>
+        </div>
+      </div>
+
+      <a href="#admission" onclick="setActive(this)">Admission</a>
+      <a href="#gallery" onclick="setActive(this)">Gallery</a>
+      <a href="#faqs" onclick="setActive(this)">FAQs</a>
+      <a href="#contact" onclick="setActive(this)">Contact Us</a>
+      <a href="#admission" class="nav-cta">Apply Now →</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge">🎓 NIELIT Exam Centre · UPBTE Approved</div>
+      <h1 class="hero-title">
+        Shape Your Future with
+        <em>World-Class IT Education</em>
+      </h1>
+      <p class="hero-desc">
+        RG Institute of IT & Engineering — an authorised NIELIT Facilitation Centre in Jhansi — empowers students with cutting-edge technology skills, practical knowledge, and government-recognised certifications to thrive in the digital era.
+      </p>
+      <div class="hero-actions">
+        <a href="#admission" class="btn-primary">Apply for Admission →</a>
+        <a href="#courses" class="btn-outline">Explore Courses</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">5000+</div>
+          <div class="stat-label">Students Trained</div>
+        </div>
+        <div>
+          <div class="stat-num">50+</div>
+          <div class="stat-label">Courses Offered</div>
+        </div>
+        <div>
+          <div class="stat-num">95%</div>
+          <div class="stat-label">Placement Rate</div>
+        </div>
+        <div>
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+        <div class="hero-card">
+          <div class="card-icon">💻</div>
+          <h3>Advanced IT Programs</h3>
+          <p>Industry-aligned curriculum designed with leading tech companies and certified trainers.</p>
+        </div>
+        <div class="hero-card">
+          <div class="card-icon">🏆</div>
+          <h3>Award-Winning Institute</h3>
+          <p>Recognized for excellence in technical education and student development.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NIELIT AFFILIATION BANNER -->
+<div style="background:var(--gold);padding:18px 40px;">
+  <div style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span style="font-size:1.6rem;">🏛️</span>
+      <div>
+        <div style="font-weight:800;color:var(--navy);font-size:0.95rem;letter-spacing:0.02em;">Authorised NIELIT Facilitation Centre · Jhansi</div>
+        <div style="font-size:0.78rem;color:var(--navy);opacity:0.75;">National Institute of Electronics & Information Technology — Ministry of Electronics & IT, Govt. of India</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;">
+      <div style="text-align:center;">
+        <div style="font-weight:800;font-size:1.1rem;color:var(--navy);">ACC · BCC</div>
+        <div style="font-size:0.7rem;color:var(--navy);opacity:0.8;">Basic Courses</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-weight:800;font-size:1.1rem;color:var(--navy);">CCC · CCC+</div>
+        <div style="font-size:0.7rem;color:var(--navy);opacity:0.8;">Govt-Recognised Certs</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-weight:800;font-size:1.1rem;color:var(--navy);">O Level · A Level</div>
+        <div style="font-size:0.7rem;color:var(--navy);opacity:0.8;">MHRD-Recognised Diplomas</div>
+      </div>
+    </div>
+    <a href="#courses" style="background:var(--navy);color:var(--gold);padding:10px 22px;border-radius:8px;font-weight:700;font-size:0.85rem;text-decoration:none;white-space:nowrap;">View All NIELIT Courses →</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-inner">
+    <div class="about-image-block">
+      <div class="about-img-main">🏛️</div>
+      <div class="about-badge">
+        <span class="num">20+</span>
+        <span class="lbl">Years of Trust</span>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <div class="section-label">About Our Institute</div>
+      <h2 class="section-title">Nurturing Tomorrow's Tech Leaders</h2>
+      <p style="color:var(--gray);line-height:1.75;font-size:0.95rem;margin-bottom:16px;">
+        RG Institute of IT & Engineering was established in 2010 with a singular vision — to conduct state-of-the-art IT training primarily for students from all walks of life in Jhansi. As an authorised NIELIT (National Institute of Electronics & Information Technology) Facilitation Centre, we offer government-recognised certifications trusted by employers nationwide.
+      </p>
+      <p style="color:var(--gray);line-height:1.75;font-size:0.95rem;margin-bottom:28px;">
+        Our philosophy is rooted in the words: <em>"Educate and raise the masses and thus alone a nation is possible."</em> Our state-of-the-art labs, experienced faculty, and industry partnerships create an environment where students don't just learn — they innovate, collaborate, and prepare for rewarding careers in IT and Engineering.
+      </p>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <h4>🎯 Our Mission</h4>
+          <p>Deliver quality technical education accessible to all, fostering innovation and excellence.</p>
+        </div>
+        <div class="value-card">
+          <h4>👁️ Our Vision</h4>
+          <p>To be the leading institute for IT and Engineering education in Northern India.</p>
+        </div>
+        <div class="value-card">
+          <h4>🔬 Modern Labs</h4>
+          <p>Equipped with the latest hardware & software for hands-on practical training.</p>
+        </div>
+        <div class="value-card">
+          <h4>🤝 Placement Cell</h4>
+          <p>Dedicated career services with industry tie-ups for 95%+ placement success.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="courses-inner">
+    <div class="section-head">
+      <div class="section-label">Academic Programs</div>
+      <h2 class="section-title">Explore Our Courses</h2>
+      <p class="section-sub">From short-term certificates to comprehensive diploma programs — find the right course to launch or advance your career.</p>
+    </div>
+
+    <div class="courses-tabs">
+      <button class="tab-btn active" onclick="filterCourses('all', this)">All Courses</button>
+      <button class="tab-btn" onclick="filterCourses('cert', this)">Certificate Courses</button>
+      <button class="tab-btn" onclick="filterCourses('dip', this)">Diploma Courses</button>
+      <button class="tab-btn" onclick="filterCourses('other', this)">Other Courses</button>
+      <button class="tab-btn" onclick="filterCourses('proj', this)">Our Projects</button>
+    </div>
+
+    <div class="courses-grid" id="courses-grid">
+
+      <!-- NIELIT Certificate Courses -->
+      <div class="course-card visible" data-cat="cert">
+        <div class="course-badge badge-cert">NIELIT Certificate</div>
+        <div class="course-icon">🖱️</div>
+        <h3>ACC – Awareness in Computer Concepts</h3>
+        <p>Basic computer operation, internet usage, e-mail, online banking awareness, and financial literacy. No minimum qualification required.</p>
+        <div class="course-duration">⏱ 20 Hours</div>
+      </div>
+
+      <div class="course-card visible" data-cat="cert">
+        <div class="course-badge badge-cert">NIELIT Certificate</div>
+        <div class="course-icon">💻</div>
+        <h3>BCC – Basic Computer Course</h3>
+        <p>Hands-on computer literacy covering MS Office (Word, Excel, PowerPoint), internet, e-Governance apps, and file management. Launched 2011.</p>
+        <div class="course-duration">⏱ 36 Hours</div>
+      </div>
+
+      <div class="course-card visible" data-cat="cert">
+        <div class="course-badge badge-cert">NIELIT Certificate</div>
+        <div class="course-icon">📋</div>
+        <h3>CCC – Course on Computer Concepts</h3>
+        <p>The flagship NIELIT IT literacy programme. Covers word processing, spreadsheets, presentations, internet, email, and small business computing. 100 MCQs online exam.</p>
+        <div class="course-duration">⏱ 2 Months · 80 Hours · Fee ₹1000</div>
+      </div>
+
+      <div class="course-card visible" data-cat="cert">
+        <div class="course-badge badge-cert">NIELIT Certificate</div>
+        <div class="course-icon">📊</div>
+        <h3>CCC+ – Course on Computer Concepts Plus</h3>
+        <p>Advanced IT skills for government and professional sector employees. Covers office automation, latest technologies, e-Gov applications, and financial literacy. Eligibility: Class X pass.</p>
+        <div class="course-duration">⏱ 126 Hours</div>
+      </div>
+
+      <div class="course-card visible" data-cat="cert">
+        <div class="course-badge badge-cert">NIELIT Certificate</div>
+        <div class="course-icon">🖥️</div>
+        <h3>ECC – Expert Computer Course</h3>
+        <p>Professional-level course covering computer hardware/software maintenance, office automation, internet technologies, e-Gov applications, and personality development. Eligibility: Class XII pass.</p>
+        <div class="course-duration">⏱ 200 Hours</div>
+      </div>
+
+      <div class="course-card visible" data-cat="cert">
+        <div class="course-badge badge-cert">Certificate</div>
+        <div class="course-icon">🎨</div>
+        <h3>Graphic Design (Photoshop & CorelDRAW)</h3>
+        <p>Professional graphic design using industry-standard tools for print and digital media.</p>
+        <div class="course-duration">⏱ 4 Months</div>
+      </div>
+
+      <!-- NIELIT Diploma Courses -->
+      <div class="course-card visible" data-cat="dip">
+        <div class="course-badge badge-dip">NIELIT Diploma</div>
+        <div class="course-icon">🔵</div>
+        <h3>'O' Level – Foundation Level</h3>
+        <p>Equivalent to Foundation Level in IT. Covers IT Tools, Internet & Web Design, C Language programming, .NET, Multimedia, and ICT Resources. Career options: Junior Programmer, EDP Assistant, Web Designer, Lab Demonstrator. Recognised by MHRD.</p>
+        <div class="course-duration">⏱ 1 Year · Exams: Jan & July</div>
+      </div>
+
+      <div class="course-card visible" data-cat="dip">
+        <div class="course-badge badge-dip">NIELIT Diploma</div>
+        <div class="course-icon">🟢</div>
+        <h3>'A' Level – Advanced Diploma</h3>
+        <p>Equivalent to Advanced Diploma. In-depth study of software development, DBMS, OS, UNIX/LINUX, C++/Java OOP, data structures, networking, and multimedia. Career options: Programmer, Web Administrator, Training Faculty, Web Content Developer. Recognised by MHRD.</p>
+        <div class="course-duration">⏱ 2 Years · Exams: Jan & July</div>
+      </div>
+
+      <div class="course-card visible" data-cat="dip">
+        <div class="course-badge badge-dip">Diploma</div>
+        <div class="course-icon">🔧</div>
+        <h3>Diploma in Hardware & Networking</h3>
+        <p>Learn computer hardware assembly, troubleshooting, LAN/WAN networking and security.</p>
+        <div class="course-duration">⏱ 1 Year</div>
+      </div>
+
+      <!-- Other Courses -->
+      <div class="course-card visible" data-cat="other">
+        <div class="course-badge badge-other">Other</div>
+        <div class="course-icon">📹</div>
+        <h3>Video Editing & Post Production</h3>
+        <p>Learn professional video editing with Premiere Pro, After Effects, and DaVinci Resolve.</p>
+        <div class="course-duration">⏱ 3 Months</div>
+      </div>
+      <div class="course-card visible" data-cat="other">
+        <div class="course-badge badge-other">Other</div>
+        <div class="course-icon">🔒</div>
+        <h3>Cyber Security Basics</h3>
+        <p>Introduction to ethical hacking, online safety, data protection and network security.</p>
+        <div class="course-duration">⏱ 2 Months</div>
+      </div>
+      <div class="course-card visible" data-cat="other">
+        <div class="course-badge badge-other">Other</div>
+        <div class="course-icon">📱</div>
+        <h3>Tally Prime & GST Accounting</h3>
+        <p>Complete Tally ERP/Prime with GST, accounting, and financial management skills.</p>
+        <div class="course-duration">⏱ 3 Months</div>
+      </div>
+
+      <!-- Projects -->
+      <div class="course-card visible" data-cat="proj">
+        <div class="course-badge badge-proj">Project</div>
+        <div class="course-icon">🏪</div>
+        <h3>E-Commerce Website Project</h3>
+        <p>Students build a fully functional e-commerce store with payment gateway integration.</p>
+        <div class="course-duration">🎯 Live Project</div>
+      </div>
+      <div class="course-card visible" data-cat="proj">
+        <div class="course-badge badge-proj">Project</div>
+        <div class="course-icon">🏥</div>
+        <h3>Hospital Management System</h3>
+        <p>End-to-end hospital management application developed as a capstone group project.</p>
+        <div class="course-duration">🎯 Live Project</div>
+      </div>
+      <div class="course-card visible" data-cat="proj">
+        <div class="course-badge badge-proj">Project</div>
+        <div class="course-icon">📚</div>
+        <h3>Student Information Portal</h3>
+        <p>Web-based portal for managing student data, attendance, and academic records.</p>
+        <div class="course-duration">🎯 Live Project</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ADMISSION -->
+<section id="admission">
+  <div class="admission-inner">
+    <div>
+      <div class="section-label">Admissions Open</div>
+      <h2 class="section-title">Join RG Institute — Simple 4-Step Process</h2>
+      <p class="section-sub" style="margin-bottom:0;">Our streamlined admission process gets you started on your tech journey quickly and easily.</p>
+
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-info">
+            <h4>Submit Enquiry</h4>
+            <p>Fill out the enquiry form or visit our campus. Our counsellors will guide you in choosing the right course based on your goals and background.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-info">
+            <h4>Document Verification</h4>
+            <p>Submit your 10th/12th marksheets, ID proof, and passport photos. All documents are verified within 24 hours.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-info">
+            <h4>Fee Payment & Enrollment</h4>
+            <p>Pay the course fee (cash, UPI, or bank transfer). Receive your student ID card and course materials immediately.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-info">
+            <h4>Classes Begin!</h4>
+            <p>Start your learning journey with our expert faculty. New batches start every 1st and 15th of the month.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="admission-form-box">
+      <h3>Quick Admission Enquiry</h3>
+      <p>Fill in your details and we'll reach out within 24 hours.</p>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="+91 00000 00000">
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label>Select Course</label>
+        <select>
+          <option>--- Choose a Course ---</option>
+          <optgroup label="NIELIT Certificate Courses">
+            <option>ACC – Awareness in Computer Concepts (20 hrs)</option>
+            <option>BCC – Basic Computer Course (36 hrs)</option>
+            <option>CCC – Course on Computer Concepts (2 months)</option>
+            <option>CCC+ – Course on Computer Concepts Plus (126 hrs)</option>
+            <option>ECC – Expert Computer Course (200 hrs)</option>
+          </optgroup>
+          <optgroup label="NIELIT Diploma Courses">
+            <option>'O' Level – Foundation Level (1 Year)</option>
+            <option>'A' Level – Advanced Diploma (2 Years)</option>
+          </optgroup>
+          <optgroup label="Other Courses">
+            <option>Diploma in Hardware & Networking</option>
+            <option>Graphic Design (Photoshop & CorelDRAW)</option>
+            <option>Video Editing & Post Production</option>
+            <option>Cyber Security Basics</option>
+            <option>Tally Prime & GST Accounting</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Highest Qualification</label>
+        <select>
+          <option>--- Select Qualification ---</option>
+          <option>8th Pass</option>
+          <option>10th Pass</option>
+          <option>12th Pass</option>
+          <option>Graduate</option>
+          <option>Post Graduate</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message (Optional)</label>
+        <textarea placeholder="Any questions or specific requirements..."></textarea>
+      </div>
+      <button class="btn-form" onclick="submitForm()">Submit Enquiry →</button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="gallery-inner">
+    <div class="section-head">
+      <div class="section-label" style="color:var(--gold)">Campus Life</div>
+      <h2 class="section-title" style="color:var(--white)">Life at RG Institute</h2>
+      <p class="section-sub" style="color:#9bacc8">Experience our vibrant campus, modern labs, and active student community.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-bg-1">
+        🏛️
+        <div class="gallery-overlay"><span>Main Campus Building</span></div>
+      </div>
+      <div class="gallery-item gallery-bg-2">
+        💻
+        <div class="gallery-overlay"><span>Computer Lab</span></div>
+      </div>
+      <div class="gallery-item gallery-bg-3">
+        📚
+        <div class="gallery-overlay"><span>Library & Resource Center</span></div>
+      </div>
+      <div class="gallery-item gallery-bg-4">
+        🎓
+        <div class="gallery-overlay"><span>Graduation Ceremony 2024</span></div>
+      </div>
+      <div class="gallery-item gallery-bg-5">
+        🔧
+        <div class="gallery-overlay"><span>Hardware Lab</span></div>
+      </div>
+      <div class="gallery-item gallery-bg-6">
+        🏆
+        <div class="gallery-overlay"><span>Annual Tech Fest</span></div>
+      </div>
+      <div class="gallery-item gallery-bg-7">
+        🎨
+        <div class="gallery-overlay"><span>Design Studio</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQs -->
+<section id="faqs">
+  <div class="faqs-inner">
+    <div class="section-head">
+      <div class="section-label">Got Questions?</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Everything you need to know about admissions, courses, and campus life.</p>
+    </div>
+
+    <div class="faq-grid">
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What is the CCC (Course on Computer Concepts)?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          CCC is the flagship NIELIT IT literacy programme recommended by the National Task Force on IT. It teaches practical computing skills — personal/business letters, internet browsing, email, presentations, and small database management. It's designed for the common man to enjoy the benefits of the digital world.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What is the duration and fee for the CCC exam?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          The CCC course duration is 2 months (80 hours). The NIELIT examination fee is ₹1,000 (plus applicable service tax). The exam consists of 100 objective-type questions to be attempted in 90 minutes online — no negative marking. Minimum passing score is 50%.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What are the eligibility criteria for NIELIT courses?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          ACC, BCC, and CCC have no minimum educational qualification — anyone can apply. CCC+ requires Class X pass, and ECC requires Class XII pass. For O Level and A Level diploma courses, the institute will advise you based on your background.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Is there any age limit for NIELIT certificate courses?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          No, there is no minimum or maximum age limit for appearing in NIELIT certificate examinations like CCC. It is open to students, housewives, working professionals, senior citizens — anyone who wishes to become computer literate.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What documents are required for admission?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          You need: (1) High School Marksheet, (2) Intermediate Marksheet (optional for some courses), (3) Government-issued ID with photo (Aadhar, Voter ID, etc.), and (4) Two recent passport-size photographs. Photocopies are sufficient at the time of enquiry.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What is NIELIT 'O' Level and what career options does it offer?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          O Level is a NIELIT diploma equivalent to a Foundation Level in IT, recognised by MHRD for employment purposes. It covers IT Tools, Internet & Web Design, C Language, .NET, Multimedia, and ICT Resources. Career options include Junior Programmer, EDP Assistant, Web Designer, and Lab Demonstrator. Exams are held every January and July.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How is the NIELIT CCC exam conducted?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          The CCC exam is conducted entirely in online mode — no pen, pencil, or paper is required. It has 100 objective-type questions of 1 mark each, with 90 minutes to complete. There is no negative marking. The exam centre is typically allotted by NIELIT to the candidate.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Are the NIELIT certificates nationally recognised?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Yes! NIELIT (National Institute of Electronics & Information Technology) is a Government of India body under the Ministry of Electronics & IT. All NIELIT certificates and diplomas carry national recognition and are widely accepted for government jobs, private employment, and higher education purposes.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          When do new batches start and what are the timings?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          New batches begin on the 1st and 15th of every month. We offer morning, afternoon, and evening batches to suit students and working professionals. Weekend batches are also available for select courses. Contact us to know current batch schedules.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Can I reappear in NIELIT exams if I fail or want to improve?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Yes! You can apply again in another exam cycle if you fail. There is no limit on the number of attempts. Interestingly, even if you have already passed the CCC exam, you may apply again in another cycle. However, you cannot submit more than one exam form per cycle.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div>
+      <div class="section-label">Get in Touch</div>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Our team is ready to help you with any queries about admissions, courses, or campus visits.</p>
+
+      <div class="contact-info-cards">
+        <div class="contact-card">
+          <div class="contact-card-icon">📍</div>
+          <div>
+            <h4>Address</h4>
+            <p>1187/2, Shivaji Nagar, Jhansi, Uttar Pradesh</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <p>6393 944 207</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <p>rgiite76@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">🕐</div>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Mon – Sat: 8:00 AM – 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-map">
+      <div class="map-placeholder">📍</div>
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <p>We'll respond to your message within 24 working hours.</p>
+        <div class="cf-grid">
+          <div class="cf-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Full name">
+          </div>
+          <div class="cf-group">
+            <label>Phone</label>
+            <input type="tel" placeholder="+91 00000 00000">
+          </div>
+        </div>
+        <div class="cf-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com">
+        </div>
+        <div class="cf-group">
+          <label>Subject</label>
+          <input type="text" placeholder="e.g. Course enquiry, Admission info...">
+        </div>
+        <div class="cf-group">
+          <label>Message</label>
+          <textarea placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="btn-contact" onclick="sendMessage()">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h2>RG Institute of IT & Engineering</h2>
+      <p style="color:var(--gold);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;">Excellence · Innovation · Growth</p>
+      <p>Empowering students with technology skills and practical knowledge to succeed in the ever-evolving digital world. An authorised NIELIT Exam Centre in Jhansi since 2010. Your success is our mission.</p>
+      <div style="display:flex;gap:10px;margin-top:16px;">
+        <a href="https://www.facebook.com/RG-Institute-of-Information-Technology-Engineering-535572580166663/" style="color:var(--gold);font-size:0.82rem;">📘 Facebook</a>
+        <a href="https://twitter.com/Nielitjhansi15" style="color:var(--gold);font-size:0.82rem;">🐦 Twitter</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#courses">Courses</a>
+      <a href="#admission">Admissions</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <a href="#courses">Certificate Courses</a>
+      <a href="#courses">Diploma Courses</a>
+      <a href="#courses">Other Courses</a>
+      <a href="#courses">Our Projects</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+916393944207">📞 6393 944 207</a>
+      <a href="mailto:rgiite76@gmail.com">✉ rgiite76@gmail.com</a>
+      <a href="#">📍 1187/2, Shivaji Nagar, Jhansi, UP</a>
+      <a href="#">🕐 Mon–Sat 8AM–6PM</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 <span>RG Institute of IT & Engineering</span>. All rights reserved.</p>
+    <p>Designed with ❤️ By TARUN SINGH</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
