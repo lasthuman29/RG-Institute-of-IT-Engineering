@@ -108,7 +108,7 @@ To host it:
 - MS Office & Internet
 
 ### Projects
-- Student project development and guidance
+- Student project development and guidance.
 
 ---
 
